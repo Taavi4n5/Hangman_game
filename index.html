@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hangman game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>The Hangman game</h1>
+    </header>
+    <section>
+        <div class="lives">
+            <p><span class="js-lives"></span></p>
+        </div>
+        <div class="letterbox">
+            <div class="input">
+                <input type="text" maxlength="1" placeholder="Sisesta 1 täht" class="js-input">
+            </div>
+            <div>
+                <button class="js-insertBtn">Proovi tähte</button>
+                <button class="js-clear">Uus sõna</button>
+            </div>
+            <div class="js-playfield"></div>
+            <div>
+                <p>Proovitud tähed: <span class="js-wrongLetterField"></span></p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="dicebox">
+            <button class="js-dice-btn20" type="button">D20</button>
+            <p><span class="js-d20-roll-result"></span></p>
+            <p><span class="js-notification"></span></p>
+            <br>
+            <button class="js-dice-btn10" type="button">D%</button>
+            <p><span class="js-d10-roll-result"></span></p>
+        </div>
+    </section>
+</body>
+
+</html>
